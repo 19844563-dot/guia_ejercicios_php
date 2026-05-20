@@ -1,0 +1,31 @@
+<html lang="es">
+    <meta charset="UTF-8">
+    <head>
+        <h2>Datos personales</h2>
+    </head>
+    <body>
+        <form action="datos.php" method="POST">
+
+            <label>Ingrese su nombre</label>
+            <input type="text" name="nombre" required>
+
+            <p><label>Ingrese su edad</label>
+            <input type="number" name="edad" required></p>
+
+            <p><label>Ingrese su correo electronico</label>
+            <input type="email" name="correo" required></p>
+
+             <p><label for="ciudad">Seleccione su ciudad:</label>
+            <select name="ciudad" required>
+                <option value="San Salvador">San Salvador</option>
+                <option value="Chalatenango">Chalatenango</option>
+                <option value="La Union">La Union</option>
+                <option value="Santa Ana">Santa Ana</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="Sonsonate">Sonsonate</option>
+                <option value="Ahuachapan">Ahuachapan</option>
+            </select></p>
+            <button type="submit">Enviar datos</button>
+        </form>
+    </body>
+</html>
